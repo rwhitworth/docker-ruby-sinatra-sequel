@@ -5,6 +5,11 @@ require 'sequel'
 require 'json'
 require 'pry'
 
+puts "\n#####"
+puts "Bound to port 4567. Ctrl+C to exit"
+puts "#####\n\n"
+
+
 DB = Sequel.sqlite
 
 DB.create_table :items do

@@ -1,0 +1,7 @@
+blackbox-test:
+  build: .
+  volumes:
+    - ./scripts:/opt/scripts
+  ports:
+    - 4567
+  net: "host"

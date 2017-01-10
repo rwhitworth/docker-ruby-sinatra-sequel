@@ -13,3 +13,7 @@ RUN apt-get update && \
 RUN gem update 
 RUN gem install sinatra thin pry
 RUN gem install sequel sqlite3 pg mysqlplus
+
+EXPOSE 4567
+
+ENTRYPOINT ["/usr/bin/ruby", "/opt/scripts/run.rb"]
