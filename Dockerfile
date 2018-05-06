@@ -1,4 +1,4 @@
-FROM ruby:2.4-slim-stretch
+FROM ruby:2.5-slim-stretch
 
 RUN apt-get update \
     && apt-get -y --no-install-recommends install \
