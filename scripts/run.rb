@@ -5,6 +5,9 @@ require 'sequel'
 require 'json'
 require 'pry'
 
+# force IPv4
+set :bind, '0.0.0.0'
+
 puts "\n#####"
 puts "Bound to port 4567. Ctrl+C to exit"
 puts "#####\n\n"
